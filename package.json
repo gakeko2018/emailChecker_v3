@@ -3,12 +3,13 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon node ./bin/www"
+    "start": "node ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "ejs": "~2.5.7",
+    "email-verify": "^0.2.1",
     "express": "~4.16.0",
     "express-fileupload": "^1.1.1-alpha.3",
     "http-errors": "~1.6.2",
