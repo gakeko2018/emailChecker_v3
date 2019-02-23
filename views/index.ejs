@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bulk Email Checker</title>
+
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <style></style>
+    <!-- Compiled and minified JavaScript -->
+  </head>
+  <body>
+    <main class="container">
+      <nav>
+        <div class="nav-wrapper">
+          <a href="/" class="brand-logo"
+            ><i class="material-icons">cloud</i>Email Checker</a
+          >
+        </div>
+      </nav>
+
+      <section>
+        <!--        <form
+          ref="uploadForm"
+          id="uploadForm"
+          action="http://localhost:3000/upload"
+          method="post"
+          encType="multipart/form-data"
+        >
+          <input type="file" name="sampleFile" />
+          <input type="submit" value="Upload!" />
+        </form> -->
+
+        <form action="/upload" method="post" encType="multipart/form-data">
+          <div class="file-field input-field">
+            <div class="btn">
+              <span>FILE</span>
+              <input name="sampleFile" type="file" />
+            </div>
+            <div class="file-path-wrapper">
+              <input
+                class="file-path validate"
+                type="text"
+                placeholder="Select *.txt file from your computer."
+              />
+            </div>
+          </div>
+
+          <div style="width:80px;margin:auto; padding:0;">
+            <button class="btn" type="submit">CHECK</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>
